@@ -1,15 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public  class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        String dia;
+
+        if (x == 1) {
+            dia = "domingo";
+        } else if (x == 2) {
+            dia = "segunda";
+        } else if (x == 3) {
+            dia = "terça";
+        } else if (x == 4) {
+            dia = "quarta";
+        } else if (x == 5) {
+            dia = "quinta";
+        } else if (x == 6) {
+            dia = "sexta";
+        } else if (x == 7) {
+            dia = "sabado";
+
+        } else {
+            dia = "valor invalido";
         }
+        System.out.println("dia da semana: " + dia)
+
+        ;
     }
-}
+    }
